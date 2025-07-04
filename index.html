@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Surabaya Fun Run 2025</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<style>
-  :root {
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V98PY5FH0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5V98PY5FH0');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surabaya Fun Run 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
       --color10: #FCD94B;
       --color30: #FFFFFF;
       --color60: #bbb2b2;
       --primarys: #252222;
-  }
+    }
 
-  * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-  }
+    }
 
-  html, body {
+    html,
+    body {
       overflow-x: hidden;
       width: 100%;
       position: relative;
-  }
+    }
 
-  body {
+    body {
       background: linear-gradient(135deg, #0b3d2e, #127e59);
       color: white;
       font-family: Arial, sans-serif;
       max-width: 100vw;
-  }
+    }
 
-  /* Prevent horizontal scroll */
-  .container, .container-fluid {
+    /* Prevent horizontal scroll */
+    .container,
+    .container-fluid {
       max-width: 100%;
       padding-left: 15px;
       padding-right: 15px;
       margin-left: auto;
       margin-right: auto;
-  }
+    }
 
-  /* Ensure all images are responsive */
-  img {
+    /* Ensure all images are responsive */
+    img {
       max-width: 100%;
       height: auto;
-  }
+    }
 
-  /* Header Styles */
-  .top-nav {
+    /* Header Styles */
+    .top-nav {
       padding: 20px 0 10px;
       display: flex;
       align-items: center;
@@ -57,29 +69,29 @@
       color: white;
       width: 100%;
       max-width: 100%;
-  }
+    }
 
-  .top-nav .navbar-brand img {
+    .top-nav .navbar-brand img {
       width: 120px;
       max-width: 100%;
-  }
+    }
 
-  .top-nav ul {
+    .top-nav ul {
       display: flex;
       list-style: none;
       gap: 1rem;
       margin: 0;
       flex-wrap: wrap;
-  }
+    }
 
-  .top-nav ul a {
+    .top-nav ul a {
       color: white;
       text-decoration: none;
       font-size: 18px;
-  }
+    }
 
-  /* Big Countdown - Desktop Only */
-  .big-countdown {
+    /* Big Countdown - Desktop Only */
+    .big-countdown {
       background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
       border: 2px solid #FCD94B;
       border-radius: 20px;
@@ -88,50 +100,50 @@
       text-align: center;
       box-shadow: 0 10px 30px rgba(252, 217, 75, 0.3);
       display: block;
-  }
+    }
 
-  .big-countdown h3 {
+    .big-countdown h3 {
       color: #FCD94B;
       margin-bottom: 20px;
       font-size: 1.8rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-  }
+    }
 
-  .big-countdown-timer {
+    .big-countdown-timer {
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
-  }
+    }
 
-  .countdown-item {
+    .countdown-item {
       text-align: center;
       background: rgba(252, 217, 75, 0.1);
       padding: 20px;
       border-radius: 15px;
       min-width: 100px;
       border: 1px solid rgba(252, 217, 75, 0.3);
-  }
+    }
 
-  .countdown-number {
+    .countdown-number {
       font-size: 3rem;
       font-weight: bold;
       color: #FCD94B;
       display: block;
       line-height: 1;
-  }
+    }
 
-  .countdown-label {
+    .countdown-label {
       font-size: 0.9rem;
       color: #ffffff;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-top: 5px;
-  }
+    }
 
-  /* Small Countdown - Mobile Only */
-  .small-countdown {
+    /* Small Countdown - Mobile Only */
+    .small-countdown {
       background-color: rgba(0, 0, 0, 0.9);
       border-radius: 20px;
       padding: 8px 12px;
@@ -146,28 +158,28 @@
       position: static;
       z-index: auto;
       margin: 0 auto;
-  }
+    }
 
-  .small-countdown .coming-soon {
+    .small-countdown .coming-soon {
       color: #FCD94B;
       font-size: 11px;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 2px;
-  }
+    }
 
-  .small-countdown .countdown-time {
+    .small-countdown .countdown-time {
       display: flex;
       align-items: center;
       gap: 6px;
-  }
+    }
 
-  .small-countdown .days {
+    .small-countdown .days {
       color: #FCD94B;
-  }
+    }
 
-  /* Hero Section with Parallax Background */
-  .hero-section {
+    /* Hero Section with Parallax Background */
+    .hero-section {
       min-height: 100vh;
       display: flex;
       position: relative;
@@ -175,10 +187,10 @@
       width: 100%;
       max-width: 100vw;
       overflow: hidden;
-  }
+    }
 
-  /* Multi-layered Background System */
-  .parallax-bg {
+    /* Multi-layered Background System */
+    .parallax-bg {
       position: absolute;
       top: 0;
       left: 0;
@@ -186,9 +198,9 @@
       height: 100%;
       object-fit: cover;
       z-index: 1;
-  }
+    }
 
-  .parallax-overlay {
+    .parallax-overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -196,9 +208,9 @@
       height: 100%;
       background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
       z-index: 2;
-  }
+    }
 
-  .parallax-layer1 {
+    .parallax-layer1 {
       position: absolute;
       top: 0;
       left: 0;
@@ -207,10 +219,10 @@
       object-fit: cover;
       z-index: 3;
       opacity: 0.97;
-  }
+    }
 
-  /* Decorative Elements */
-  .parallax-decor {
+    /* Decorative Elements */
+    .parallax-decor {
       position: absolute;
       top: 0;
       left: 0;
@@ -219,10 +231,10 @@
       object-fit: cover;
       z-index: 4;
       opacity: 0.6;
-  }
+    }
 
-  /* Mobile Decorative Elements - Enhanced Diagonal Line Layout */
-  .parallax-decor-m-0 {
+    /* Mobile Decorative Elements - Enhanced Diagonal Line Layout */
+    .parallax-decor-m-0 {
       position: absolute;
       top: 12%;
       left: 5%;
@@ -231,9 +243,9 @@
       z-index: 4;
       opacity: 0.8;
       transform: rotate(-12deg);
-  }
+    }
 
-  .parallax-decor-m-1 {
+    .parallax-decor-m-1 {
       position: absolute;
       top: 22%;
       left: 22%;
@@ -242,9 +254,9 @@
       z-index: 4;
       opacity: 0.7;
       transform: rotate(8deg);
-  }
+    }
 
-  .parallax-decor-m-2 {
+    .parallax-decor-m-2 {
       position: absolute;
       top: 32%;
       left: 40%;
@@ -253,9 +265,9 @@
       z-index: 4;
       opacity: 0.6;
       transform: rotate(-18deg);
-  }
+    }
 
-  .parallax-decor-m-3 {
+    .parallax-decor-m-3 {
       position: absolute;
       top: 42%;
       left: 58%;
@@ -264,9 +276,9 @@
       z-index: 4;
       opacity: 0.7;
       transform: rotate(12deg);
-  }
+    }
 
-  .parallax-decor-m-4 {
+    .parallax-decor-m-4 {
       position: absolute;
       top: 52%;
       left: 76%;
@@ -275,18 +287,18 @@
       z-index: 4;
       opacity: 0.5;
       transform: rotate(-8deg);
-  }
+    }
 
-  .hero-content {
+    .hero-content {
       text-align: center;
       z-index: 10;
       width: 100%;
       max-width: 100%;
       padding: 0 15px;
       position: relative;
-  }
+    }
 
-  .powered-by {
+    .powered-by {
       position: absolute;
       top: 2px;
       left: 50%;
@@ -295,182 +307,195 @@
       text-align: center;
       font-size: 10px;
       color: white;
-  }
+    }
 
-  .powered-by img {
+    .powered-by img {
       height: 100px;
-  }
+    }
 
-  .logo-funrun {
+    .logo-funrun {
       width: 100%;
       max-width: 250px;
       margin-bottom: 2rem;
-  }
+    }
 
-  .prize-amount {
+    .prize-amount {
       font-size: clamp(2rem, 8vw, 4rem);
       font-weight: bold;
       color: var(--color10);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       animation: pulse 2s infinite;
       word-break: break-word;
-  }
+    }
 
-  @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-  }
+    @keyframes pulse {
 
-.btn-register {
-    background: linear-gradient(45deg, #fcd94b, #ffcc00);
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50px;
-    color: #252222; /* dark text for good contrast */
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
-    animation: glow 2s infinite alternate;
-    max-width: 90%;
-    text-align: center;
-}
+      0%,
+      100% {
+        transform: scale(1);
+      }
 
-@keyframes glow {
-    from { box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); }
-    to { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
-}
+      50% {
+        transform: scale(1.05);
+      }
+    }
 
-.btn-register:hover {
-    transform: translateY(-3px);
-    background: linear-gradient(45deg, #ffe066, #ffcc00);
-    box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
-    color: #252222;
-}
+    .btn-register {
+      background: linear-gradient(45deg, #fcd94b, #ffcc00);
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      color: #252222;
+      /* dark text for good contrast */
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+      animation: glow 2s infinite alternate;
+      max-width: 90%;
+      text-align: center;
+    }
 
-  /* Section base styles */
-  section {
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      }
+
+      to {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+      }
+    }
+
+    .btn-register:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(45deg, #ffe066, #ffcc00);
+      box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+      color: #252222;
+    }
+
+    /* Section base styles */
+    section {
       width: 100%;
       max-width: 100vw;
       overflow-x: hidden;
-  }
+    }
 
-  /* Our Mission Section */
-  .our-mission {
+    /* Our Mission Section */
+    .our-mission {
       background-color: whitesmoke;
       padding: 80px 0;
       position: relative;
       width: 100%;
-  }
+    }
 
-  .our-mission img {
+    .our-mission img {
       border-radius: 30px;
       width: 100%;
       height: auto;
       max-height: 450px;
       object-fit: cover;
-  }
+    }
 
-  h5.fade-in {
-  text-align: justify;
-  font-weight: bolder;
-  color: #0b3d2e;
-  }
+    h5.fade-in {
+      text-align: justify;
+      font-weight: bolder;
+      color: #0b3d2e;
+    }
 
-  p.fade-in {
-  text-align: justify;
-  color: #0b3d2e;
-  }
+    p.fade-in {
+      text-align: justify;
+      color: #0b3d2e;
+    }
 
-  /* Guest Stars Section */
-  .guest-stars {
+    /* Guest Stars Section */
+    .guest-stars {
       background-color: #252222;
       padding: 80px 0;
       width: 100%;
-  }
+    }
 
-  .guest-card {
+    .guest-card {
       text-align: center;
       margin-bottom: 2rem;
       padding: 0 10px;
-  }
+    }
 
-  .guest-card img {
+    .guest-card img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1rem;
-  }
+    }
 
-  .guest-card h4 {
+    .guest-card h4 {
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
-  }
+    }
 
-  .guest-card p {
+    .guest-card p {
       font-size: 0.9rem;
-  }
+    }
 
-  /* Reasons Section */
-  .reasons-section {
+    /* Reasons Section */
+    .reasons-section {
       background: linear-gradient(135deg, #0b3d2e, #127e59);
       padding: 80px 0;
       position: relative;
       width: 100%;
-  }
+    }
 
-  .reasons-grid {
+    .reasons-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1rem;
       margin-top: 2rem;
       padding: 0 15px;
-  }
+    }
 
-  .reason-item {
+    .reason-item {
       text-align: center;
       background: rgba(255, 255, 255, 0.1);
       padding: 1.5rem 1rem;
       border-radius: 20px;
       backdrop-filter: blur(10px);
       word-break: break-word;
-  }
+    }
 
-  .reason-item img {
+    .reason-item img {
       width: 60px;
       height: 60px;
       margin-bottom: 1rem;
-  }
+    }
 
-  .reason-item p {
+    .reason-item p {
       font-size: 0.9rem;
       margin: 0;
-  }
+    }
 
-  /* Schedule Section */
-  h3.fade-in {
-    color: #0b3d2e;
-  }
+    /* Schedule Section */
+    h3.fade-in {
+      color: #0b3d2e;
+    }
 
-  h3.white {
-    color: white;
-  }
+    h3.white {
+      color: white;
+    }
 
-  .schedule-section {
-    background-image: url('./assets/images/bg_abstract_soft.svg'),
-                      linear-gradient(135deg, #0b3d2e, #127e59);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    padding: 80px 0;
-    width: 100%;
-  }
+    .schedule-section {
+      background-image: url('./assets/images/bg_abstract_soft.svg'),
+        linear-gradient(135deg, #0b3d2e, #127e59);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      padding: 80px 0;
+      width: 100%;
+    }
 
-  .schedule-card {
+    .schedule-card {
       background-color: white;
       color: #252222;
       padding: 1.5rem;
@@ -479,53 +504,53 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       width: 100%;
       max-width: 100%;
-  }
+    }
 
-  .schedule-card .icon {
+    .schedule-card .icon {
       width: 50px;
       height: 50px;
       margin-right: 1rem;
       flex-shrink: 0;
-  }
+    }
 
-  .schedule-card .d-flex {
+    .schedule-card .d-flex {
       flex-wrap: wrap;
       gap: 1rem;
-  }
+    }
 
-  .schedule-card h5 {
+    .schedule-card h5 {
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
-  }
+    }
 
-  .schedule-card p {
+    .schedule-card p {
       font-size: 0.9rem;
       margin-bottom: 0.3rem;
-  }
+    }
 
-  /* Route Section */
-  .route-section {
+    /* Route Section */
+    .route-section {
       background-image: url(./assets/images/bg_route.jpg);
       background-size: cover;
       background-position: center;
       padding: 80px 0;
       width: 100%;
-  }
+    }
 
-  .route-card {
+    .route-card {
       position: relative;
       margin-bottom: 2rem;
       width: 100%;
-  }
+    }
 
-  .route-card img {
+    .route-card img {
       width: 100%;
       height: 300px;
       object-fit: cover;
       border-radius: 15px;
-  }
+    }
 
-  .route-badge {
+    .route-badge {
       position: absolute;
       bottom: 15px;
       right: 15px;
@@ -533,14 +558,14 @@
       padding: 0.8rem 1.5rem;
       border-radius: 10px;
       text-align: center;
-  }
+    }
 
-  .route-badge h2 {
+    .route-badge h2 {
       font-size: 2rem;
       margin: 0;
-  }
+    }
 
-  .btn-detail {
+    .btn-detail {
       background: #e74c3c;
       border: none;
       padding: 8px 16px;
@@ -548,18 +573,19 @@
       color: white;
       margin-top: 0.5rem;
       font-size: 0.9rem;
-  }
+    }
 
-  /* Size Chart Section */
+    /* Size Chart Section */
 
-  .size-section {
+    .size-section {
       background-color: whitesmoke;
       padding: 80px 0;
       width: 100%;
-  }
-  .size-chart {
+    }
+
+    .size-chart {
       background-image: url('./assets/images/bg_abstract_soft.svg'),
-            linear-gradient(135deg, #0b3d2e, #127e59);
+        linear-gradient(135deg, #0b3d2e, #127e59);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -570,44 +596,44 @@
       margin: 2rem 0;
       width: 100%;
       max-width: 100%;
-  }
+    }
 
-  .nav-pills {
+    .nav-pills {
       flex-wrap: wrap;
       justify-content: center;
       gap: 0.5rem;
-  }
+    }
 
-  .nav-pills .nav-link {
+    .nav-pills .nav-link {
       background: #252222;
       color: white;
       border-radius: 25px;
       margin: 0.25rem;
       padding: 0.5rem 1rem;
       font-size: 0.9rem;
-  }
+    }
 
-  .nav-pills .nav-link.active {
+    .nav-pills .nav-link.active {
       background: var(--color10);
       color: #252222;
-  }
+    }
 
-  .table-responsive {
+    .table-responsive {
       overflow-x: auto;
-  }
+    }
 
-  .table {
+    .table {
       font-size: 0.9rem;
-  }
+    }
 
-  /* Prize Section */
-  .prize-section {
+    /* Prize Section */
+    .prize-section {
       background: linear-gradient(135deg, #8e44ad, #9b59b6);
       padding: 80px 0;
       width: 100%;
-  }
+    }
 
-  .prize-card {
+    .prize-card {
       background: white;
       color: #252222;
       padding: 1.5rem;
@@ -617,17 +643,17 @@
       overflow: hidden;
       width: 100%;
       max-width: 100%;
-  }
+    }
 
-  .prize-medal {
+    .prize-medal {
       position: absolute;
       top: -30px;
       right: -10px;
       width: 100px;
       opacity: 0.3;
-  }
+    }
 
-  .prize-row {
+    .prize-row {
       display: flex;
       align-items: center;
       margin-bottom: 0.8rem;
@@ -636,23 +662,23 @@
       background: rgba(0, 0, 0, 0.05);
       font-size: 0.9rem;
       flex-wrap: wrap;
-  }
+    }
 
-  .prize-row img {
+    .prize-row img {
       width: 25px;
       height: 25px;
       margin-right: 0.8rem;
       flex-shrink: 0;
-  }
+    }
 
-  .prize-row span {
+    .prize-row span {
       word-break: break-word;
-  }
+    }
 
-  /* Registration Section */
-  .registration-section {
+    /* Registration Section */
+    .registration-section {
       background-image: url('./assets/images/bg_abstract_soft.svg'),
-                  linear-gradient(135deg, #0b3d2e, #127e59);
+        linear-gradient(135deg, #0b3d2e, #127e59);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -660,9 +686,9 @@
       padding: 80px 0;
       text-align: center;
       width: 100%;
-  }
+    }
 
-  .price-badge {
+    .price-badge {
       background: rgba(255, 255, 255, 0.2);
       padding: 2rem 1.5rem;
       border-radius: 25px;
@@ -671,41 +697,45 @@
       backdrop-filter: blur(10px);
       width: 100%;
       max-width: 90%;
-  }
+    }
 
-  /* Map Modal Styles */
-  .modal-content {
+    /* Map Modal Styles */
+    .modal-content {
       background-image: url('./assets/images/bg_route.jpg');
       background-size: cover;
       background-position: center;
       border: none;
       border-radius: 20px;
       overflow: hidden;
-  }
+    }
 
-  /* Desktop Styles */
-      @media (min-width: 992px) {
+    /* Desktop Styles */
+    @media (min-width: 992px) {
       .hero-main-content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 40px;
       }
+
       .hero-left {
         width: 55%;
       }
+
       .hero-right {
-      width: 40%;
-      display: flex;
-      align-items: center;
+        width: 40%;
+        display: flex;
+        align-items: center;
       }
+
       .big-countdown {
-      margin: 0;
+        margin: 0;
       }
 
       .hero-section {
         display: flex;
-        align-items: flex-start; /* push content to top */
+        align-items: flex-start;
+        /* push content to top */
         justify-content: center;
         flex-direction: column;
         padding-top: 60px;
@@ -720,26 +750,27 @@
       .hero-content .btn-register {
         margin-top: 1rem;
       }
+
       /* Show big countdown on desktop */
       .big-countdown {
-          display: block !important;
+        display: block !important;
       }
-      
+
       /* Hide small countdown on desktop */
       .small-countdown {
-          display: none !important;
+        display: none !important;
       }
-      
+
       .top-nav {
-          justify-content: space-between;
+        justify-content: space-between;
       }
-      
+
       .countdown-item {
-          min-width: 80px;
+        min-width: 80px;
       }
-      
+
       .countdown-number {
-          font-size: 3.5rem;
+        font-size: 3.5rem;
       }
 
       /* Hide mobile decorations on desktop */
@@ -748,34 +779,35 @@
       .parallax-decor-m-2,
       .parallax-decor-m-3,
       .parallax-decor-m-4 {
-          display: none;
+        display: none;
       }
 
       #sizeTabContent {
         width: 80%;
         margin: auto;
       }
-  }
+    }
 
-  /* Tablet Styles */
-  @media (min-width: 769px) and (max-width: 991px) {
+    /* Tablet Styles */
+    @media (min-width: 769px) and (max-width: 991px) {
+
       /* Show big countdown on tablet */
       .big-countdown {
-          display: block !important;
+        display: block !important;
       }
-      
+
       /* Hide small countdown on tablet */
       .small-countdown {
-          display: none !important;
+        display: none !important;
       }
-      
+
       .countdown-item {
-          min-width: 100px;
-          padding: 15px;
+        min-width: 100px;
+        padding: 15px;
       }
-      
+
       .countdown-number {
-          font-size: 2.5rem;
+        font-size: 2.5rem;
       }
 
       /* Hide mobile decorations on tablet */
@@ -784,180 +816,180 @@
       .parallax-decor-m-2,
       .parallax-decor-m-3,
       .parallax-decor-m-4 {
-          display: none;
+        display: none;
       }
-  }
+    }
 
-  /* Mobile Specific Styles */
-  @media (max-width: 768px) {
+    /* Mobile Specific Styles */
+    @media (max-width: 768px) {
       .container {
-          padding-left: 10px;
-          padding-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
-      
+
       /* Hide big countdown on mobile */
       .big-countdown {
-          display: none !important;
+        display: none !important;
       }
-      
+
       /* Show small countdown centered in navbar on mobile */
       .small-countdown {
-          display: flex !important;
-          visibility: visible !important;
-          opacity: 1 !important;
-          background-color: rgba(0, 0, 0, 0.9) !important;
-          color: white !important;
-          font-size: 11px !important;
-          padding: 8px 12px !important;
-          border-radius: 15px !important;
-          position: static !important;
-          z-index: auto !important;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
-          margin: 0 auto !important;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+        color: white !important;
+        font-size: 11px !important;
+        padding: 8px 12px !important;
+        border-radius: 15px !important;
+        position: static !important;
+        z-index: auto !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+        margin: 0 auto !important;
       }
-      
+
       .small-countdown .coming-soon {
-          color: #FCD94B !important;
-          font-weight: bold !important;
-          font-size: 10px !important;
+        color: #FCD94B !important;
+        font-weight: bold !important;
+        font-size: 10px !important;
       }
 
       .small-countdown .countdown-time .days {
-          color: #FCD94B !important;
-          font-weight: bold !important;
+        color: #FCD94B !important;
+        font-weight: bold !important;
       }
-      
+
       /* Hide logo and center countdown in navbar on mobile */
       .top-nav {
-          padding: 15px 0 10px;
-          justify-content: center !important;
-          text-align: center;
+        padding: 15px 0 10px;
+        justify-content: center !important;
+        text-align: center;
       }
 
       .top-nav .navbar-brand {
-          display: none !important;
+        display: none !important;
       }
 
       .top-nav ul {
-          display: none;
+        display: none;
       }
 
       .hero-content {
-          padding: 0 10px;
-          text-align: center;
+        padding: 0 10px;
+        text-align: center;
       }
 
       .logo-funrun {
-          width: 90%;
-          max-width: 280px;
-          margin: 0 auto 2rem auto;
-          display: block;
+        width: 90%;
+        max-width: 280px;
+        margin: 0 auto 2rem auto;
+        display: block;
       }
 
       .prize-amount {
-          font-size: 2.5rem;
+        font-size: 2.5rem;
       }
 
       .btn-register {
-          padding: 15px 40px;
-          font-size: 16px;
-          width: auto;
-          max-width: 280px;
-          margin: 2rem auto 0 auto;
-          display: block;
-          text-align: center;
+        padding: 15px 40px;
+        font-size: 16px;
+        width: auto;
+        max-width: 280px;
+        margin: 2rem auto 0 auto;
+        display: block;
+        text-align: center;
       }
 
       .reasons-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 0.8rem;
-          padding: 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        padding: 0 10px;
       }
 
       .reason-item {
-          padding: 1rem 0.5rem;
+        padding: 1rem 0.5rem;
       }
 
       .reason-item img {
-          width: 50px;
-          height: 50px;
+        width: 50px;
+        height: 50px;
       }
 
       .route-badge {
-          bottom: 10px;
-          right: 10px;
-          padding: 0.5rem 1rem;
+        bottom: 10px;
+        right: 10px;
+        padding: 0.5rem 1rem;
       }
 
       .route-badge h2 {
-          font-size: 1.5rem;
+        font-size: 1.5rem;
       }
 
       .btn-detail {
-          padding: 6px 12px;
-          font-size: 0.8rem;
+        padding: 6px 12px;
+        font-size: 0.8rem;
       }
 
       .schedule-card {
-          padding: 1rem;
+        padding: 1rem;
       }
 
       .schedule-card .d-flex {
-          flex-direction: column;
-          text-align: center;
+        flex-direction: column;
+        text-align: center;
       }
 
       .schedule-card .icon {
-          margin: 0 auto 1rem auto;
+        margin: 0 auto 1rem auto;
       }
 
       .prize-card {
-          padding: 1rem;
+        padding: 1rem;
       }
 
       .prize-row {
-          font-size: 0.8rem;
-          padding: 0.3rem;
+        font-size: 0.8rem;
+        padding: 0.3rem;
       }
 
       .prize-row img {
-          width: 20px;
-          height: 20px;
-          margin-right: 0.5rem;
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
       }
 
       .guest-card img {
-          width: 100px;
-          height: 100px;
+        width: 100px;
+        height: 100px;
       }
 
       .guest-card h4 {
-          font-size: 1rem;
+        font-size: 1rem;
       }
 
       .guest-card p {
-          font-size: 0.8rem;
+        font-size: 0.8rem;
       }
 
       .size-chart {
-          padding: 1rem;
-          margin: 1rem 0;
+        padding: 1rem;
+        margin: 1rem 0;
       }
 
       .nav-pills .nav-link {
-          font-size: 0.8rem;
-          padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
       }
 
       .table {
-          font-size: 0.8rem;
+        font-size: 0.8rem;
       }
 
       .price-badge {
-          padding: 0.8rem 1rem;
-          margin: 0.3rem;
-          width: 90%;
-          max-width: none;
+        padding: 0.8rem 1rem;
+        margin: 0.3rem;
+        width: 90%;
+        max-width: none;
       }
 
       /* Ensure sections don't overflow */
@@ -968,444 +1000,521 @@
       .route-section,
       .prize-section,
       .registration-section {
-          padding: 60px 0;
+        padding: 60px 0;
       }
 
       /* Fix any potential overflow issues */
       .row {
-          margin-left: 0;
-          margin-right: 0;
+        margin-left: 0;
+        margin-right: 0;
       }
 
       .col-lg-6,
       .col-md-4,
       .col-6 {
-          padding-left: 5px;
-          padding-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
       /* Hide desktop decorations on mobile */
       .parallax-decor {
-          display: none;
+        display: none;
       }
-  }
+    }
 
-  @media (max-width: 480px) {
+    @media (max-width: 480px) {
       .reasons-grid {
-          grid-template-columns: 1fr;
-          gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
       }
 
       .prize-amount {
-          font-size: 2rem;
+        font-size: 2rem;
       }
 
       .hero-content h5 {
-          font-size: 1rem;
+        font-size: 1rem;
       }
 
       .hero-content h4 {
-          font-size: 1.1rem;
+        font-size: 1.1rem;
       }
 
       .small-countdown {
-          font-size: 10px !important;
-          padding: 6px 10px !important;
-          gap: 3px !important;
+        font-size: 10px !important;
+        padding: 6px 10px !important;
+        gap: 3px !important;
       }
 
       .small-countdown .coming-soon {
-          font-size: 9px !important;
+        font-size: 9px !important;
       }
-      
+
       .countdown-item {
-          min-width: 80px;
-          padding: 15px 10px;
+        min-width: 80px;
+        padding: 15px 10px;
       }
-      
+
       .countdown-number {
-          font-size: 2rem;
+        font-size: 2rem;
       }
-      
+
       .countdown-label {
-          font-size: 0.8rem;
+        font-size: 0.8rem;
       }
 
       .logo-funrun {
-          max-width: 250px;
+        max-width: 250px;
       }
 
       .btn-register {
-          max-width: 250px;
-          padding: 12px 30px;
-          font-size: 14px;
+        max-width: 250px;
+        padding: 12px 30px;
+        font-size: 14px;
       }
-  }
+    }
 
-  /* Scroll animations */
-  .fade-in {
+    /* Scroll animations */
+    .fade-in {
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.6s ease;
-  }
+    }
 
-  .fade-in.visible {
+    .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
-  }
+    }
 
-  /* Ensure no horizontal overflow anywhere */
-  * {
+    /* Ensure no horizontal overflow anywhere */
+    * {
       max-width: 100%;
-  }
+    }
 
-  .container-fluid {
+    .container-fluid {
       padding-left: 10px;
       padding-right: 10px;
-  }
-</style>
+    }
+  </style>
 </head>
+
 <body>
-<!-- Header -->
-<header>
+  <!-- Header -->
+  <header>
     <div class="container">
-        <div class="top-nav">
-            <a class="navbar-brand" href="#">
-                <!-- <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025"> -->
-            </a>
-            <!-- Small countdown for mobile - now part of navbar -->
-            <div class="small-countdown" id="mobileCountdown">
-                <div class="coming-soon">Coming Soon!</div>
-                <div class="countdown-time">
-                    <span class="days">0</span>
-                    <span>Hari</span>
-                    <span class="hours">0</span>
-                    <span>:</span>
-                    <span class="minutes">0</span>
-                    <span>:</span>
-                    <span class="seconds">00</span>
-                </div>
-            </div>
-            <ul>
-                <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <div class="top-nav">
+        <a class="navbar-brand" href="#">
+          <!-- <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025"> -->
+        </a>
+        <!-- Small countdown for mobile - now part of navbar -->
+        <div class="small-countdown" id="mobileCountdown">
+          <div class="coming-soon">Coming Soon!</div>
+          <div class="countdown-time">
+            <span class="days">0</span>
+            <span>Hari</span>
+            <span class="hours">0</span>
+            <span>:</span>
+            <span class="minutes">0</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+          </div>
+        </div>
+        <ul>
+          <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                
-            </ul>
-        </div>
-    </div>
-</header>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
 
-<!-- Hero Section with Multi-layered Background -->
-<section id="home" class="hero-section">
-    <!-- Background Layer 1 - Main Background -->
-    <img src="./assets/images/bg_backbg_header.png" alt="Background" class="parallax-bg">
-    
-    <!-- Background Layer 2 - Overlay -->
-    <div class="parallax-overlay"></div>
-    
-    <!-- Background Layer 3 - People/Action Layer -->
-    <img src="./assets/images/bg_layer1_header.png" alt="Running Event" class="parallax-layer1">
-    
-    <div class="container">
-        <div class="hero-content">
-<div class="hero-main-content">
-  <div class="hero-left">
-    <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025" class="logo-funrun">
-    <h5><i class="fas fa-calendar me-2"></i>Minggu, 5 Oktober 2025</h5>
-    <h5 class="mt-4"><i class="fas fa-location-dot me-2"></i>Venue : <span>Livind Land by Mandiri</span> Jl. Pemuda 23 - Surabaya</h5>
-    <p class="mt-4 fw-bold">RACE CATEGORY</p>
-    <h2 class="prize-amount">5K FUN RUN</h2>
-    <a href="#register" class="btn-register mt-4">REGISTER NOW</a>
-  </div>
-  <div class="hero-right">
-    <div class="big-countdown fade-in">
-      <h3>Event Dimulai Dalam</h3>
-      <div class="big-countdown-timer">
-        <div class="countdown-item"><span class="countdown-number days">0</span><span class="countdown-label">Hari</span></div>
-        <div class="countdown-item"><span class="countdown-number hours">0</span><span class="countdown-label">Jam</span></div>
-        <div class="countdown-item"><span class="countdown-number minutes">0</span><span class="countdown-label">Menit</span></div>
-        <div class="countdown-item"><span class="countdown-number seconds">00</span><span class="countdown-label">Detik</span></div>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
-</div>
+  </header>
+
+  <!-- Hero Section with Multi-layered Background -->
+  <section id="home" class="hero-section">
+    <!-- Background Layer 1 - Main Background -->
+    <img src="./assets/images/bg_backbg_header.png" alt="Background" class="parallax-bg">
+
+    <!-- Background Layer 2 - Overlay -->
+    <div class="parallax-overlay"></div>
+
+    <!-- Background Layer 3 - People/Action Layer -->
+    <img src="./assets/images/bg_layer1_header.png" alt="Running Event" class="parallax-layer1">
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-main-content">
+          <div class="hero-left">
+            <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025" class="logo-funrun">
+            <h5><i class="fas fa-calendar me-2"></i>Minggu, 5 Oktober 2025</h5>
+            <h5 class="mt-4"><i class="fas fa-location-dot me-2"></i>Venue : <span>Livind Land by Mandiri</span> Jl.
+              Pemuda 23 - Surabaya</h5>
+            <p class="mt-4 fw-bold">RACE CATEGORY</p>
+            <h2 class="prize-amount">5K FUN RUN</h2>
+            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn-register mt-4">REGISTER NOW</a>
+          </div>
+          <div class="hero-right">
+            <div class="big-countdown fade-in">
+              <h3>Event Dimulai Dalam</h3>
+              <div class="big-countdown-timer">
+                <div class="countdown-item"><span class="countdown-number days">0</span><span
+                    class="countdown-label">Hari</span></div>
+                <div class="countdown-item"><span class="countdown-number hours">0</span><span
+                    class="countdown-label">Jam</span></div>
+                <div class="countdown-item"><span class="countdown-number minutes">0</span><span
+                    class="countdown-label">Menit</span></div>
+                <div class="countdown-item"><span class="countdown-number seconds">00</span><span
+                    class="countdown-label">Detik</span></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
     </div>
 
     <!-- Powered by Haivo -->
     <div class="powered-by">
       <img src="./assets/images/haivo_logo_white.png" alt="haivo logo">
     </div>
-</section>
+  </section>
 
-<!-- Our Mission Section -->
-<section id="mission" class="our-mission">
+  <!-- Sponsors Section -->
+  <section style="background-color: #007f4e; padding: 40px 0;">
     <div class="container">
-        <h3 class="text-center mb-5 fade-in">Our Mission</h3>
-        <div class="row align-items-center">
-            <div class="col-lg-5 fade-in">
-                <img src="./assets/images/our_mission.png" alt="Running Event" class="img-fluid">
-            </div>
-            <div class="col-lg-7">
-                <div class="ps-lg-4">
-                    <h5 class="fade-in">SURABAYA FUN RUN 2025: LARI SEHAT, CERIA BERSAMA SURABAYA</h5>
-                    <p class="fade-in">Surabaya Fun Run tahun ini tidak hanya ajang lari biasa, tetapi juga
-                        membawa dampak positif bagi anak muda untuk lebih produktif
-                        dan sehat dengan memberikan dampak positif untuk sekitar.</p>
-                    <p class="fade-in">Dengan event lari ini kami membawa nilai-nilai ESG (Enviromental, Social, and Governance), dimana aspek sosial kesehatan
-                        melibatkan masyarakat lokal, komunitas peduli kesehatan diperkuat dengan kolaborasi Mengedukasi peserta tentang pentingnya gaya hidup sehat dan aktif secara fisik. Terlihat dalam
-                        komitmen penyelenggara untuk mengharikan event yang berkelanjutan. Surabaya Fun Run membuktikan bahwa olahraga dalam menjadi katalits positif untuk pentingnya gaya hidup sehat
-                        bagi lingkungan sekitar.
-                    </p>
-                    <p class="fade-in">Jadilah bagian dari sejarah Surabaya Fun Run 2025! Rasakan atmosfer yang tak terlupakan, di salah satu event lari paling berkesan di Surabaya! Siapkan langkahmu, 
-                      tantang dirimu, dan mari kita berlari bersama! #SurabayaFunRun2025 #LariSehat #CeriaBersamaSurabaya
-                    </p>
-                </div>
-            </div>
-        </div>
+      <h3 class="text-center text-white mb-4">Our Sponsors</h3>
+      <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 10px;">
+        <img src="./assets/images/sponsor1.png" alt="Sponsor 1"
+          style="height: 60px; margin: 0 20px; display: inline-block;">
+        <img src="./assets/images/sponsor2.png" alt="Sponsor 2"
+          style="height: 60px; margin: 0 20px; display: inline-block;">
+        <img src="./assets/images/sponsor3.png" alt="Sponsor 3"
+          style="height: 60px; margin: 0 20px; display: inline-block;">
+        <!-- Add more sponsor logos as needed -->
+        <!-- Example with uploaded image -->
+        <img src="./assets/images/849c034a-569f-464d-9d92-58699bbfd578.png" alt="Sponsor Uploaded"
+          style="height: 60px; margin: 0 20px; display: inline-block;">
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Reasons Section -->
-<section class="reasons-section">
+
+  <!-- Our Mission Section -->
+  <section id="mission" class="our-mission">
     <div class="container">
-        <h3 class="text-center mb-5 fade-in white">Reasons to run with us!</h3>
-        <div class="reasons-grid">
-            <div class="reason-item fade-in">
-                <img src="./assets/images/bib_num.png" alt="BIB Number">
-                <p class="fw-bold">Nomor BIB</p>
-            </div>
-            <div class="reason-item fade-in">
-                <img src="./assets/images/jersey.png" alt="Jersey">
-                <p class="fw-bold">Running Jersey</p>
-            </div>
-            <div class="reason-item fade-in">
-                <img src="./assets/images/medal.png" alt="Medal">
-                <p class="fw-bold">Finisher Medal</p>
-            </div>
-            <div class="reason-item fade-in">
-                <img src="./assets/images/goodies_bag.png" alt="Medal">
-                <p class="fw-bold">Goodies Bag</p>
-            </div>
-            <div class="reason-item fade-in">
-                <img src="./assets/images/doorprize.png" alt="Medal">
-                <p class="fw-bold">Doorprize</p>
-            </div>
+      <h3 class="text-center mb-5 fade-in">Our Mission</h3>
+      <div class="row align-items-center">
+        <div class="col-lg-5 fade-in">
+          <img src="./assets/images/our_mission.png" alt="Running Event" class="img-fluid">
         </div>
-    </div>
-</section>
-
-<!-- Route Section -->
-<section id="route" class="route-section">
-    <div class="container">
-        <h3 class="text-center mb-5 fade-in">Running Route</h3>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="route-card fade-in">
-                    <img src="./assets/images/route.png" alt="5K Route">
-                    <div class="route-badge">
-                        <h2 class="text-warning"><strong>5</strong>KM</h2>
-                        <button class="btn btn-detail" style="background: #FFD400; color: black;" data-bs-toggle="modal" data-bs-target="#routeModal">
-                          Detail Map <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Schedule Section -->
-<section id="schedule" class="schedule-section">
-    <div class="container">
-        <h3 class="text-center mb-5 fade-in white">Event Schedule</h3>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="schedule-card fade-in">
-                    <div class="d-flex align-items-center">
-                        <img src="./assets/images/Racepack.png" alt="Racepack" class="icon">
-                        <div class="ms-3">
-                            <h5 class="fw-bold">Pengambilan Racepack</h5>
-                            <p><i class="fas fa-calendar-days me-2"></i>4 Oktober 2025 • 08:00-15:00 WIB</p>
-                            <p><i class="fas fa-location-dot me-2"></i>Livind Land by Mandiri - Surabaya</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule-card fade-in">
-                    <div class="d-flex align-items-center">
-                        <img src="./assets/images/Start.png" alt="Start" class="icon">
-                        <div class="ms-3">
-                            <h5 class="fw-bold">Waktu Start</h5>
-                            <p>Minggu, 5 Oktober 2025</p>
-                            <p>04:00 WIB</p>
-                            <p><i class="fas fa-location-dot me-2"></i>Livind Land by Mandiri - Surabaya</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Size Chart Section -->
-<section class="container size-section">
-    <div class="size-chart fade-in">
-        <h2 class="text-center mb-4">Size Chart</h2>
-
-        <ul class="nav nav-pills justify-content-center mb-4" id="sizeTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="unisex-tab" data-bs-toggle="pill" data-bs-target="#unisex" type="button" role="tab">Unisex</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kid-tab" data-bs-toggle="pill" data-bs-target="#kid" type="button" role="tab">Kid</button>
-            </li>
-        </ul>
-
-        <div class="tab-content" id="sizeTabContent">
-            <!-- Unisex Tab -->
-            <div class="tab-pane fade show active" id="unisex" role="tabpanel" aria-labelledby="unisex-tab">
-                <p class="text-center">Specs Running Jersey (Unisex) - Slim Fit</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center">
-                        <img src="./assets/images/jersey.jpg" alt="Unisex Jersey" class="img-fluid">
-                    </div>
-                    <div class="col-md-6">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Size</th>
-                                    <th>Panjang (cm)</th>
-                                    <th>Lebar (cm)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>S</td><td>68</td><td>46</td></tr>
-                                <tr><td>M</td><td>69</td><td>48</td></tr>
-                                <tr><td>L</td><td>72</td><td>52</td></tr>
-                                <tr><td>XL</td><td>75</td><td>53</td></tr>
-                                <tr><td>2XL</td><td>79</td><td>55</td></tr>
-                                <tr><td>3XL</td><td>81</td><td>57</td></tr>
-                                <tr><td>4XL</td><td>82</td><td>59</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kid Tab -->
-            <div class="tab-pane fade" id="kid" role="tabpanel" aria-labelledby="kid-tab">
-                <p class="text-center">Specs Running Jersey (Kid) - Regular Fit</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center">
-                        <img src="./assets/images/jersey.jpg" alt="Kid Jersey" class="img-fluid">
-                    </div>
-                    <div class="col-md-6">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Size</th>
-                                    <th>Panjang (cm)</th>
-                                    <th>Lebar (cm)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>S</td><td>44</td><td>33</td></tr>
-                                <tr><td>M</td><td>49</td><td>37</td></tr>
-                                <tr><td>L</td><td>54</td><td>43</td></tr>
-                                <tr><td>XL</td><td>59</td><td>45</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Registration Section -->
-<section id="register" class="registration-section">
-  <div class="container">
-    <h3 class="text-center mb-4 fade-in white">Register</h3>
-
-    <div class="row justify-content-center">
-      <!-- Card 1: Reguler -->
-      <div class="col-md-4 mb-4 fade-in">
-        <div class="price-badge text-center">
-          <h5 class="fw-bold mb-3">Reguler</h5>
-          <span class="badge bg-warning text-dark mb-2">Early Bird</span>
-          <h4 class="fw-bold text-white">Rp. 150.000,-</h4>
-          <a href="#" class="btn btn-register mt-3">Register</a>
+        <div class="col-lg-7">
+          <div class="ps-lg-4">
+            <h5 class="fade-in">SURABAYA FUN RUN 2025: LARI SEHAT, CERIA BERSAMA SURABAYA</h5>
+            <p class="fade-in">Surabaya Fun Run tahun ini tidak hanya ajang lari biasa, tetapi juga
+              membawa dampak positif bagi anak muda untuk lebih produktif
+              dan sehat dengan memberikan dampak positif untuk sekitar.</p>
+            <p class="fade-in">Dengan event lari ini kami membawa nilai-nilai ESG (Enviromental, Social, and
+              Governance), dimana aspek sosial kesehatan
+              melibatkan masyarakat lokal, komunitas peduli kesehatan diperkuat dengan kolaborasi Mengedukasi peserta
+              tentang pentingnya gaya hidup sehat dan aktif secara fisik. Terlihat dalam
+              komitmen penyelenggara untuk mengharikan event yang berkelanjutan. Surabaya Fun Run membuktikan bahwa
+              olahraga dalam menjadi katalits positif untuk pentingnya gaya hidup sehat
+              bagi lingkungan sekitar.
+            </p>
+            <p class="fade-in">Jadilah bagian dari sejarah Surabaya Fun Run 2025! Rasakan atmosfer yang tak terlupakan,
+              di salah satu event lari paling berkesan di Surabaya! Siapkan langkahmu,
+              tantang dirimu, dan mari kita berlari bersama! #SurabayaFunRun2025 #LariSehat #CeriaBersamaSurabaya
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Card 2: Couple -->
-      <div class="col-md-4 mb-4 fade-in">
+  <!-- Reasons Section -->
+  <section class="reasons-section">
+    <div class="container">
+      <h3 class="text-center mb-5 fade-in white">Reasons to run with us!</h3>
+      <div class="reasons-grid">
+        <div class="reason-item fade-in">
+          <img src="./assets/images/bib_num.png" alt="BIB Number">
+          <p class="fw-bold">Nomor BIB</p>
+        </div>
+        <div class="reason-item fade-in">
+          <img src="./assets/images/jersey.png" alt="Jersey">
+          <p class="fw-bold">Running Jersey</p>
+        </div>
+        <div class="reason-item fade-in">
+          <img src="./assets/images/medal.png" alt="Medal">
+          <p class="fw-bold">Finisher Medal</p>
+        </div>
+        <div class="reason-item fade-in">
+          <img src="./assets/images/goodies_bag.png" alt="Medal">
+          <p class="fw-bold">Goodies Bag</p>
+        </div>
+        <div class="reason-item fade-in">
+          <img src="./assets/images/doorprize.png" alt="Medal">
+          <p class="fw-bold">Doorprize</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Section -->
+  <section id="route" class="route-section">
+    <div class="container">
+      <h3 class="text-center mb-5 fade-in">Running Route</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="route-card fade-in">
+            <img src="./assets/images/route.png" alt="5K Route">
+            <div class="route-badge">
+              <h2 class="text-warning"><strong>5</strong>KM</h2>
+              <button class="btn btn-detail" style="background: #FFD400; color: black;" data-bs-toggle="modal"
+                data-bs-target="#routeModal">
+                Detail Map <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+      <h3 class="text-center mb-5 fade-in white">Event Schedule</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="schedule-card fade-in">
+            <div class="d-flex align-items-center">
+              <img src="./assets/images/Racepack.png" alt="Racepack" class="icon">
+              <div class="ms-3">
+                <h5 class="fw-bold">Pengambilan Racepack</h5>
+                <p><i class="fas fa-calendar-days me-2"></i>4 Oktober 2025 • 08:00-15:00 WIB</p>
+                <p><i class="fas fa-location-dot me-2"></i>Livind Land by Mandiri - Surabaya</p>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-card fade-in">
+            <div class="d-flex align-items-center">
+              <img src="./assets/images/Start.png" alt="Start" class="icon">
+              <div class="ms-3">
+                <h5 class="fw-bold">Waktu Start</h5>
+                <p>Minggu, 5 Oktober 2025</p>
+                <p>04:00 WIB</p>
+                <p><i class="fas fa-location-dot me-2"></i>Livind Land by Mandiri - Surabaya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Size Chart Section -->
+  <section class="container size-section">
+    <div class="size-chart fade-in">
+      <h2 class="text-center mb-4">Size Chart</h2>
+
+      <ul class="nav nav-pills justify-content-center mb-4" id="sizeTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="unisex-tab" data-bs-toggle="pill" data-bs-target="#unisex" type="button"
+            role="tab">Unisex</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="kid-tab" data-bs-toggle="pill" data-bs-target="#kid" type="button"
+            role="tab">Kid</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="sizeTabContent">
+        <!-- Unisex Tab -->
+        <div class="tab-pane fade show active" id="unisex" role="tabpanel" aria-labelledby="unisex-tab">
+          <p class="text-center">Specs Running Jersey (Unisex) - Slim Fit</p>
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <img src="./assets/images/jersey.jpg" alt="Unisex Jersey" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Panjang (cm)</th>
+                    <th>Lebar (cm)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S</td>
+                    <td>68</td>
+                    <td>46</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>69</td>
+                    <td>48</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>72</td>
+                    <td>52</td>
+                  </tr>
+                  <tr>
+                    <td>XL</td>
+                    <td>75</td>
+                    <td>53</td>
+                  </tr>
+                  <tr>
+                    <td>2XL</td>
+                    <td>79</td>
+                    <td>55</td>
+                  </tr>
+                  <tr>
+                    <td>3XL</td>
+                    <td>81</td>
+                    <td>57</td>
+                  </tr>
+                  <tr>
+                    <td>4XL</td>
+                    <td>82</td>
+                    <td>59</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kid Tab -->
+        <div class="tab-pane fade" id="kid" role="tabpanel" aria-labelledby="kid-tab">
+          <p class="text-center">Specs Running Jersey (Kid) - Regular Fit</p>
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <img src="./assets/images/jersey.jpg" alt="Kid Jersey" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Panjang (cm)</th>
+                    <th>Lebar (cm)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S</td>
+                    <td>44</td>
+                    <td>33</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>49</td>
+                    <td>37</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>54</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <td>XL</td>
+                    <td>59</td>
+                    <td>45</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register" class="registration-section">
+    <div class="container">
+      <h3 class="text-center mb-4 fade-in white">Register</h3>
+
+      <div class="row justify-content-center">
+        <!-- Card 1: Reguler -->
+        <div class="col-md-4 mb-4 fade-in">
+          <div class="price-badge text-center">
+            <h5 class="fw-bold mb-3">Reguler</h5>
+            <span class="badge bg-warning text-dark mb-2">Early Bird</span>
+            <h4 class="fw-bold text-white">Rp. 150.000,-</h4>
+            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Couple -->
+        <!-- <div class="col-md-4 mb-4 fade-in">
         <div class="price-badge text-center">
           <h5 class="fw-bold mb-3">Couple</h5>
           <span class="badge bg-warning text-dark mb-2">Early Bird</span>
           <h4 class="fw-bold text-white">Rp. 275.000,-</h4>
-          <a href="#" class="btn btn-register mt-3">Register</a>
+          <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+        </div>
+      </div> -->
+
+        <!-- Card 3: Kid -->
+        <div class="col-md-4 mb-4 fade-in">
+          <div class="price-badge text-center">
+            <h5 class="fw-bold mb-3">Kid</h5>
+            <span class="badge bg-warning text-dark mb-2">Reguler</span>
+            <h4 class="fw-bold text-white">Rp. 135.000,-</h4>
+            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Card 3: Kid -->
-      <div class="col-md-4 mb-4 fade-in">
-        <div class="price-badge text-center">
-          <h5 class="fw-bold mb-3">Kid</h5>
-          <span class="badge bg-warning text-dark mb-2">Early Bird</span>
-          <h4 class="fw-bold text-white">Rp. 125.000,-</h4>
-          <a href="#" class="btn btn-register mt-3">Register</a>
+
+  <!-- Modal for Full Route Image -->
+  <div class="modal fade" id="routeModal" tabindex="-1" aria-labelledby="routeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0" style="background-color: #0b3d2e;">
+          <h5 class="modal-title text-white" id="routeModalLabel">Running Route Map</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="./assets/images/route.png" alt="5K Route Full" class="img-fluid w-100">
         </div>
       </div>
     </div>
   </div>
-</section>
 
 
-<!-- Modal for Full Route Image -->
-<div class="modal fade" id="routeModal" tabindex="-1" aria-labelledby="routeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header border-0" style="background-color: #0b3d2e;">
-        <h5 class="modal-title text-white" id="routeModalLabel">Running Route Map</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-0">
-        <img src="./assets/images/route.png" alt="5K Route Full" class="img-fluid w-100">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Footer -->
-<footer class="text-center text-white py-4" style="background-color: #0b3d2e;">
+  <!-- Footer -->
+  <footer class="text-center text-white py-4" style="background-color: #0b3d2e;">
     <p class="mb-0">&copy; <span id="currentYear"></span> Haivo. All rights reserved.</p>
-</footer>
+  </footer>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
     // Countdown Timer
     function updateCountdown() {
-        const eventDate = new Date('2025-10-05T04:00:00').getTime();
-        const now = new Date().getTime();
-        const distance = eventDate - now;
+      const eventDate = new Date('2025-10-05T04:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Update both big and small countdowns
-        document.querySelectorAll('.days').forEach(el => el.textContent = days);
-        document.querySelectorAll('.hours').forEach(el => el.textContent = hours);
-        document.querySelectorAll('.minutes').forEach(el => el.textContent = minutes);
-        document.querySelectorAll('.seconds').forEach(el => el.textContent = seconds.toString().padStart(2, '0'));
+      // Update both big and small countdowns
+      document.querySelectorAll('.days').forEach(el => el.textContent = days);
+      document.querySelectorAll('.hours').forEach(el => el.textContent = hours);
+      document.querySelectorAll('.minutes').forEach(el => el.textContent = minutes);
+      document.querySelectorAll('.seconds').forEach(el => el.textContent = seconds.toString().padStart(2, '0'));
     }
 
     setInterval(updateCountdown, 1000);
@@ -1413,57 +1522,58 @@
 
     // Scroll animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
     }, observerOptions);
 
     document.querySelectorAll('.fade-in').forEach(el => {
-        observer.observe(el);
+      observer.observe(el);
     });
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
     });
 
     // Force show mobile countdown on mobile devices
     function checkMobileCountdown() {
-        const mobileCountdown = document.getElementById('mobileCountdown');
-        if (window.innerWidth <= 768) {
-            mobileCountdown.style.display = 'flex';
-            mobileCountdown.style.visibility = 'visible';
-            mobileCountdown.style.opacity = '1';
-        } else {
-            mobileCountdown.style.display = 'none';
-        }
+      const mobileCountdown = document.getElementById('mobileCountdown');
+      if (window.innerWidth <= 768) {
+        mobileCountdown.style.display = 'flex';
+        mobileCountdown.style.visibility = 'visible';
+        mobileCountdown.style.opacity = '1';
+      } else {
+        mobileCountdown.style.display = 'none';
+      }
     }
 
     // Check on load and resize
     window.addEventListener('load', checkMobileCountdown);
     window.addEventListener('resize', checkMobileCountdown);
-    
+
     // Initial check
     checkMobileCountdown();
 
     // Dynamically set current year
     document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
+  </script>
 </body>
+
 </html>
