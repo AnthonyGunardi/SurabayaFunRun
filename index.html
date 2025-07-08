@@ -688,6 +688,23 @@
       width: 100%;
     }
 
+    .registration-section .btn-secondary {
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      margin: 2rem auto 0 auto;
+      text-align: center;
+      border-radius: 50px;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #aaa !important;
+      color: white;
+      pointer-events: none;
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
     .price-badge {
       background: rgba(255, 255, 255, 0.2);
       padding: 2rem 1.5rem;
@@ -748,6 +765,10 @@
       }
 
       .hero-content .btn-register {
+        margin-top: 1rem;
+      }
+
+      .hero-content .btn-secondary {
         margin-top: 1rem;
       }
 
@@ -891,6 +912,16 @@
       }
 
       .btn-register {
+        padding: 15px 40px;
+        font-size: 16px;
+        width: auto;
+        max-width: 280px;
+        margin: 2rem auto 0 auto;
+        display: block;
+        text-align: center;
+      }
+
+      .btn-secondary {
         padding: 15px 40px;
         font-size: 16px;
         width: auto;
@@ -1072,6 +1103,12 @@
         padding: 12px 30px;
         font-size: 14px;
       }
+
+      .btn-secondary {
+        max-width: 250px;
+        padding: 12px 30px;
+        font-size: 14px;
+      }
     }
 
     /* Scroll animations */
@@ -1180,7 +1217,7 @@
   </section>
 
   <!-- Sponsors Section -->
-  <section style="background-color: #007f4e; padding: 40px 0;">
+  <!-- <section style="background-color: #007f4e; padding: 40px 0;">
     <div class="container">
       <h3 class="text-center text-white mb-4">Our Sponsors</h3>
       <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 10px;">
@@ -1190,14 +1227,8 @@
           style="height: 60px; margin: 0 20px; display: inline-block;">
         <img src="./assets/images/sponsor3.png" alt="Sponsor 3"
           style="height: 60px; margin: 0 20px; display: inline-block;">
-        <!-- Add more sponsor logos as needed -->
-        <!-- Example with uploaded image -->
-        <img src="./assets/images/849c034a-569f-464d-9d92-58699bbfd578.png" alt="Sponsor Uploaded"
-          style="height: 60px; margin: 0 20px; display: inline-block;">
-      </div>
     </div>
-  </section>
-
+  </section> -->
 
   <!-- Our Mission Section -->
   <section id="mission" class="our-mission">
@@ -1335,7 +1366,7 @@
           <p class="text-center">Specs Running Jersey (Unisex) - Slim Fit</p>
           <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-              <img src="./assets/images/jersey.jpg" alt="Unisex Jersey" class="img-fluid">
+              <img src="./assets/images/jersey_detail.jpg" alt="Unisex Jersey" class="img-fluid">
             </div>
             <div class="col-md-6">
               <table class="table table-bordered">
@@ -1393,7 +1424,7 @@
           <p class="text-center">Specs Running Jersey (Kid) - Regular Fit</p>
           <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-              <img src="./assets/images/jersey.jpg" alt="Kid Jersey" class="img-fluid">
+              <img src="./assets/images/jersey_detail.jpg" alt="Kid Jersey" class="img-fluid">
             </div>
             <div class="col-md-6">
               <table class="table table-bordered">
@@ -1441,25 +1472,25 @@
       <h3 class="text-center mb-4 fade-in white">Register</h3>
 
       <div class="row justify-content-center">
-        <!-- Card 1: Reguler -->
+        <!-- Card 1: Early Bird -->
         <div class="col-md-4 mb-4 fade-in">
           <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Reguler</h5>
-            <span class="badge bg-warning text-dark mb-2">Early Bird</span>
-            <h4 class="fw-bold text-white">Rp. 150.000,-</h4>
-            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+            <h5 class="fw-bold mb-3">Early Bird</h5>
+            <span class="badge bg-secondary text-white mb-2">Sold Out</span>
+            <h4 class="fw-bold text-white text-decoration-line-through">Rp. 150.000,-</h4>
+            <button class="btn btn-secondary mt-3" disabled>Sold Out</button>
           </div>
         </div>
 
-        <!-- Card 2: Couple -->
-        <!-- <div class="col-md-4 mb-4 fade-in">
-        <div class="price-badge text-center">
-          <h5 class="fw-bold mb-3">Couple</h5>
-          <span class="badge bg-warning text-dark mb-2">Early Bird</span>
-          <h4 class="fw-bold text-white">Rp. 275.000,-</h4>
-          <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+        <!-- Card 2: Pre Sale -->
+        <div class="col-md-4 mb-4 fade-in">
+          <div class="price-badge text-center">
+            <h5 class="fw-bold mb-3">Pre Sale</h5>
+            <span class="badge bg-warning text-dark mb-2">Pre Sale</span>
+            <h4 class="fw-bold text-white">Rp. 185.000,-</h4>
+            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+          </div>
         </div>
-      </div> -->
 
         <!-- Card 3: Kid -->
         <div class="col-md-4 mb-4 fade-in">
