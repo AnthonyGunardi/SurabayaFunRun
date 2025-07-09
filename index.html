@@ -583,6 +583,19 @@
       width: 100%;
     }
 
+    .size-card-wrapper {
+      background-color: #ffffff;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .size-chart-img {
+      max-height: 100%;
+      object-fit: contain;
+    }
+
     .size-chart {
       background-image: url('./assets/images/bg_abstract_soft.svg'),
         linear-gradient(135deg, #0b3d2e, #127e59);
@@ -716,6 +729,36 @@
       max-width: 90%;
     }
 
+    /* Sponsor Section */
+    .sponsors-section {
+      background-color: white;
+      padding: 60px 0;
+    }
+
+    .sponsor-logo {
+      max-height: 90px;
+      width: auto;
+      object-fit: contain;
+      display: inline-block;
+    }
+
+    /* Optional wrapper for vertical alignment */
+    .sponsor-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+    }
+
+    /* Specific adjustment for YESPLIS logo */
+    .yesplis-logo {
+      max-height: 45px;
+      padding: 4px;
+      background-color: white;
+      border: 1px solid #eee;
+      border-radius: 8px;
+    }
+
     /* Map Modal Styles */
     .modal-content {
       background-image: url('./assets/images/bg_route.jpg');
@@ -801,6 +844,21 @@
       .parallax-decor-m-3,
       .parallax-decor-m-4 {
         display: none;
+      }
+
+      .size-card-wrapper .row {
+        min-height: 450px; /* Ensures equal height between image and table */
+      }
+
+      .size-equal-height {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .size-card-wrapper .row {
+        align-items: stretch;
       }
 
       #sizeTabContent {
@@ -1216,20 +1274,6 @@
     </div>
   </section>
 
-  <!-- Sponsors Section -->
-  <!-- <section style="background-color: #007f4e; padding: 40px 0;">
-    <div class="container">
-      <h3 class="text-center text-white mb-4">Our Sponsors</h3>
-      <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 10px;">
-        <img src="./assets/images/sponsor1.png" alt="Sponsor 1"
-          style="height: 60px; margin: 0 20px; display: inline-block;">
-        <img src="./assets/images/sponsor2.png" alt="Sponsor 2"
-          style="height: 60px; margin: 0 20px; display: inline-block;">
-        <img src="./assets/images/sponsor3.png" alt="Sponsor 3"
-          style="height: 60px; margin: 0 20px; display: inline-block;">
-    </div>
-  </section> -->
-
   <!-- Our Mission Section -->
   <section id="mission" class="our-mission">
     <div class="container">
@@ -1361,103 +1405,68 @@
       </ul>
 
       <div class="tab-content" id="sizeTabContent">
+
         <!-- Unisex Tab -->
         <div class="tab-pane fade show active" id="unisex" role="tabpanel" aria-labelledby="unisex-tab">
-          <p class="text-center">Specs Running Jersey (Unisex) - Slim Fit</p>
-          <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-              <img src="./assets/images/jersey_detail.jpg" alt="Unisex Jersey" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Size</th>
-                    <th>Panjang (cm)</th>
-                    <th>Lebar (cm)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>S</td>
-                    <td>68</td>
-                    <td>46</td>
-                  </tr>
-                  <tr>
-                    <td>M</td>
-                    <td>69</td>
-                    <td>48</td>
-                  </tr>
-                  <tr>
-                    <td>L</td>
-                    <td>72</td>
-                    <td>52</td>
-                  </tr>
-                  <tr>
-                    <td>XL</td>
-                    <td>75</td>
-                    <td>53</td>
-                  </tr>
-                  <tr>
-                    <td>2XL</td>
-                    <td>79</td>
-                    <td>55</td>
-                  </tr>
-                  <tr>
-                    <td>3XL</td>
-                    <td>81</td>
-                    <td>57</td>
-                  </tr>
-                  <tr>
-                    <td>4XL</td>
-                    <td>82</td>
-                    <td>59</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="size-card-wrapper p-4">
+            <p class="text-center">Specs Running Jersey (Unisex) - Slim Fit</p>
+            <div class="row justify-content-center align-items-stretch h-100">
+              <div class="col-md-6 text-center size-equal-height">
+                <img src="./assets/images/jersey_detail.jpg" alt="Unisex Jersey" class="img-fluid size-chart-img">
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="table-responsive w-100">
+                  <table class="table table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Panjang (cm)</th>
+                        <th>Lebar (cm)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>S</td><td>68</td><td>46</td></tr>
+                      <tr><td>M</td><td>69</td><td>48</td></tr>
+                      <tr><td>L</td><td>72</td><td>52</td></tr>
+                      <tr><td>XL</td><td>75</td><td>53</td></tr>
+                      <tr><td>2XL</td><td>79</td><td>55</td></tr>
+                      <tr><td>3XL</td><td>81</td><td>57</td></tr>
+                      <tr><td>4XL</td><td>82</td><td>59</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Kid Tab -->
         <div class="tab-pane fade" id="kid" role="tabpanel" aria-labelledby="kid-tab">
-          <p class="text-center">Specs Running Jersey (Kid) - Regular Fit</p>
-          <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-              <img src="./assets/images/jersey_detail.jpg" alt="Kid Jersey" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Size</th>
-                    <th>Panjang (cm)</th>
-                    <th>Lebar (cm)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>S</td>
-                    <td>44</td>
-                    <td>33</td>
-                  </tr>
-                  <tr>
-                    <td>M</td>
-                    <td>49</td>
-                    <td>37</td>
-                  </tr>
-                  <tr>
-                    <td>L</td>
-                    <td>54</td>
-                    <td>43</td>
-                  </tr>
-                  <tr>
-                    <td>XL</td>
-                    <td>59</td>
-                    <td>45</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="size-card-wrapper p-4">
+            <p class="text-center">Specs Running Jersey (Kid) - Regular Fit</p>
+            <div class="row justify-content-center align-items-stretch h-100">
+              <div class="col-md-6 text-center size-equal-height">
+                <img src="./assets/images/jersey_detail.jpg" alt="Kid Jersey" class="img-fluid">
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="table-responsive w-100">
+                  <table class="table table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Panjang (cm)</th>
+                        <th>Lebar (cm)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>S</td><td>44</td><td>33</td></tr>
+                      <tr><td>M</td><td>49</td><td>37</td></tr>
+                      <tr><td>L</td><td>54</td><td>43</td></tr>
+                      <tr><td>XL</td><td>59</td><td>45</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1505,6 +1514,49 @@
     </div>
   </section>
 
+  <!-- Official Sponsors Section -->
+  <section class="sponsors-section">
+    <div class="container">
+      <h3 class="text-center mb-4 text-dark">Official Sponsors</h3>
+      <div class="row justify-content-center">
+        <div class="col-4 col-md-2 text-center mb-4">
+          <img src="./assets/images/j-water.png" alt="J-Water" class="sponsor-logo">
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <img src="./assets/images/gsport.jpg" alt="GSport Wear" class="sponsor-logo">
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <div class="sponsor-logo-wrapper">
+            <img src="./assets/images/yesplis.png" alt="Yesplis" class="sponsor-logo yesplis-logo">
+          </div>
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <div class="sponsor-logo-wrapper">
+            <img src="./assets/images/fotoyu.jpg" alt="Fotoyu" class="sponsor-logo yesplis-logo">
+          </div>
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <div class="sponsor-logo-wrapper">
+            <img src="./assets/images/omg.png" alt="OMG" class="sponsor-logo yesplis-logo">
+          </div>
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <div class="sponsor-logo-wrapper">
+            <img src="./assets/images/deorex.png" alt="Deorex" class="sponsor-logo yesplis-logo">
+          </div>
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <img src="./assets/images/flash-fitness.png" alt="Flash Fitness" class="sponsor-logo">
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <img src="./assets/images/ladang-lima.png" alt="Ladang Lima" class="sponsor-logo">
+        </div>
+        <div class="col-4 col-md-2 text-center mb-4">
+          <img src="./assets/images/garam-cap-kapal.png" alt="Garam Cap Kapal" class="sponsor-logo">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Modal for Full Route Image -->
   <div class="modal fade" id="routeModal" tabindex="-1" aria-labelledby="routeModalLabel" aria-hidden="true">
@@ -1520,7 +1572,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Footer -->
   <footer class="text-center text-white py-4" style="background-color: #0b3d2e;">
