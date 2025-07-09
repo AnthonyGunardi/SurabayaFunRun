@@ -49,6 +49,47 @@
       height: 7dvh;
     }
 
+    /* Splash Screen */
+    #splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #0b3d2e, #127e59);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: opacity 0.5s ease;
+    }
+
+    #splash-screen img {
+      max-width: 200px;
+      margin-bottom: 30px;
+    }
+
+    .splash-progress-container {
+      width: 80%;
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #progress-bar {
+      height: 20px;
+      width: 0%;
+      background-color: #FCD94B;
+      transition: width 0.3s;
+    }
+
+    #splash-screen.fade-out {
+      opacity: 0;
+    }
+
     /* Prevent horizontal scroll */
     .container,
     .container-fluid {
@@ -1203,6 +1244,14 @@
 </head>
 
 <body>
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run Logo">
+    <div class="splash-progress-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
   <!-- Header -->
   <header>
     <div class="container">
@@ -1674,6 +1723,32 @@
 
     // Re-check mobile countdown on resize
     window.addEventListener('resize', checkMobileCountdown);
+
+    // 3. Splash Screen
+    document.addEventListener("DOMContentLoaded", () => {
+    let progress = 0;
+    const progressBar = document.getElementById("progress-bar");
+
+    const interval = setInterval(() => {
+      if (progress < 90) {
+        progress += Math.random() * 10;
+        progressBar.style.width = `${Math.min(progress, 100)}%`;
+      }
+    }, 100);
+
+    window.addEventListener("load", () => {
+      progress = 100;
+      progressBar.style.width = "100%";
+
+      setTimeout(() => {
+        const splash = document.getElementById("splash-screen");
+        if (splash) {
+          splash.classList.add("fade-out");
+          setTimeout(() => splash.remove(), 500);
+        }
+      }, 500);
+    });
+  });
   </script>
 
 </body>
