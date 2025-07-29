@@ -814,6 +814,29 @@
       overflow: hidden;
     }
 
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+      text-align: center;
+      line-height: 60px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      color: white;
+    }
+
     /* Desktop Styles */
     @media (min-width: 992px) {
       .hero-main-content {
@@ -1670,6 +1693,11 @@
       </div>
     </div>
   </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/6281286341895" target="_blank" class="whatsapp-float" aria-label="Chat via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- Footer -->
   <footer class="text-center text-white py-4" style="background-color: #0b3d2e;">
