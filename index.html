@@ -1730,17 +1730,20 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
   <script>
     // Countdown Timer
     function updateCountdown() {
-      const eventDate = new Date('2025-10-05T04:00:00').getTime();
-      const now = new Date().getTime();
-      const distance = eventDate - now;
+      const DateTime = luxon.DateTime;
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      const eventDate = DateTime.fromISO('2025-10-05T05:00:00', { zone: 'Asia/Jakarta' });
+      const now = DateTime.now().setZone('Asia/Jakarta');
+      const diff = eventDate.diff(now, ['days', 'hours', 'minutes', 'seconds']).toObject();
+
+      const days = Math.floor(diff.days);
+      const hours = Math.floor(diff.hours);
+      const minutes = Math.floor(diff.minutes);
+      const seconds = Math.floor(diff.seconds);
 
       document.querySelectorAll('.days').forEach(el => el.textContent = days);
       document.querySelectorAll('.hours').forEach(el => el.textContent = hours);
