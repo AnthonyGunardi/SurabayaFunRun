@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-5V98PY5FH0');
   </script>
   <meta charset="UTF-8">
@@ -105,7 +104,7 @@
 
     /* Header Styles */
     .top-nav {
-      padding: 20px 0 10px;
+      padding: 10px 0 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -131,6 +130,35 @@
       color: white;
       text-decoration: none;
       font-size: 18px;
+    }
+
+    .burger-button {
+      color: white;
+    }
+
+    /* Mobile Offcanvas Customization */
+    .offcanvas {
+      background-color: #0b3d2e; /* match header green */
+    }
+
+    .offcanvas .offcanvas-title {
+      color: #ffc107; /* yellow accent like countdown */
+      font-weight: bold;
+    }
+
+    .offcanvas .nav-link {
+      color: white;
+      font-size: 1.1rem;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .offcanvas .nav-link:hover {
+      color: #ffc107; /* highlight on hover */
+    }
+
+    .btn-close-white {
+      filter: invert(1); /* make close button visible on dark bg */
     }
 
     /* Big Countdown - Desktop Only */
@@ -983,6 +1011,12 @@
 
     /* Mobile Specific Styles */
     @media (max-width: 768px) {
+      header {
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+      }
+
       .container {
         padding-left: 10px;
         padding-right: 10px;
@@ -995,18 +1029,15 @@
 
       /* Show small countdown centered in navbar on mobile */
       .small-countdown {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+        display: block !important;
         background-color: rgba(0, 0, 0, 0.9) !important;
         color: white !important;
         font-size: 11px !important;
         padding: 8px 12px !important;
         border-radius: 15px !important;
-        position: static !important;
-        z-index: auto !important;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
-        margin: 0 auto !important;
+        margin: 0 auto !important;  /* keeps it centered */
+        text-align: center !important;
       }
 
       .small-countdown .coming-soon {
@@ -1285,35 +1316,59 @@
   </div>
 
   <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="top-nav">
-        <a class="navbar-brand" href="#">
-          <!-- <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025"> -->
-        </a>
-        <!-- Small countdown for mobile - now part of navbar -->
-        <div class="small-countdown" id="mobileCountdown">
-          <div class="coming-soon">Coming Soon!</div>
-          <div class="countdown-time">
-            <span class="days">0</span>
-            <span>Hari</span>
-            <span class="hours">0</span>
-            <span>:</span>
-            <span class="minutes">0</span>
-            <span>:</span>
-            <span class="seconds">00</span>
-          </div>
-        </div>
-        <ul>
-          <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
-          <li><a href="https://www.instagram.com/surabayafunrun"><i class="fab fa-instagram"></i></a></li>
+  <header class="position-relative">
+    <div class="container d-flex">
+      <!-- Burger for mobile -->
+      <button class="btn d-lg-none burger-button"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+        <i class="fas fa-bars"></i>
+      </button>
 
-        </ul>
+      <!-- Logo -->
+      <a class="navbar-brand d-none d-lg-block me-2" href="index.html">
+        <!-- <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025"> -->
+      </a>
+
+      <!-- Small Countdown -->
+      <div id="mobileCountdown" class="small-countdown d-lg-none position-absolute top-50 start-50 translate-middle text-center">
+        <div class="coming-soon">COMING SOON!!</div>
+        <div class="countdown-time d-flex justify-content-center mt-1">
+          <span id="days" class="days">00</span><span class="mx-1">Hari</span>
+          <span id="hours" class="hours">00</span><span class="mx-1">:</span>
+          <span id="minutes" class="minutes">00</span><span class="mx-1">:</span>
+          <span id="seconds" class="seconds">00</span>
+        </div>
       </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block ms-auto">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="rules.html">Rule</a></li>
+        </ul>
+      </nav>
+
     </div>
   </header>
+
+  <!-- Offcanvas Menu for Mobile -->
+  <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="rules.html">Rule</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Hero Section with Multi-layered Background -->
   <section id="home" class="hero-section">
@@ -1457,7 +1512,7 @@
               <img src="./assets/images/Racepack.png" alt="Racepack" class="icon">
               <div class="ms-3">
                 <h5 class="fw-bold">Pengambilan Racepack</h5>
-                <p><i class="fas fa-calendar-days me-2"></i>4 Oktober 2025 • 08:00-15:00 WIB</p>
+                <p><i class="fas fa-calendar-days me-2"></i>4 Oktober 2025 • 09:00-20:00 WIB</p>
                 <p><i class="fas fa-location-dot me-2"></i>Livind Land by Mandiri - Surabaya</p>
               </div>
             </div>
@@ -1467,8 +1522,7 @@
               <img src="./assets/images/Start.png" alt="Start" class="icon">
               <div class="ms-3">
                 <h5 class="fw-bold">Start Run</h5>
-                <p>Minggu, 5 Oktober 2025</p>
-                <p>06:00 WIB</p>
+                <p><i class="fas fa-calendar-days me-2"></i>Minggu, 5 Oktober 2025 • 06:00 WIB</p>
                 <p><i class="fas fa-location-dot me-2"></i>Livind Land by Mandiri - Surabaya</p>
               </div>
             </div>
@@ -1571,63 +1625,36 @@
       <h3 class="text-center mb-4 fade-in white">Register</h3>
 
       <div class="row justify-content-center">
-        <!-- Card 1: Early Bird Couple Pack -->
+
+
+        <!-- Card 1: Reguler -->
         <div class="col-md-4 mb-4 fade-in">
           <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Early Bird Couple Pack</h5>
+            <h5 class="fw-bold mb-3">Regular Xtra</h5>
+            <!-- <span class="badge bg-warning text-dark mb-2">1 Ticket</span> -->
             <span class="badge bg-secondary text-white mb-2">Sold Out</span>
-            <h4 class="fw-bold text-white text-decoration-line-through">Rp. 360.000,-</h4>
+            <h4 class="fw-bold text-white text-decoration-line-through">Rp. 230.000,-</h4>
             <button class="btn btn-secondary mt-3" disabled>Sold Out</button>
           </div>
         </div>
 
-        <!-- Card 2: Reguler -->
+        <!-- Card 2: Couple Pack -->
         <div class="col-md-4 mb-4 fade-in">
           <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Regular</h5>
-            <span class="badge bg-warning text-dark mb-2">1 Ticket</span>
-            <h4 class="fw-bold text-white">Rp. 220.000,-</h4>
-            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+            <h5 class="fw-bold mb-3">Couple Pack Xtra</h5>
+            <span class="badge bg-secondary text-white mb-2">Sold Out</span>
+            <h4 class="fw-bold text-white text-decoration-line-through">Rp. 440.000,-</h4>
+            <button class="btn btn-secondary mt-3" disabled>Sold Out</button>
           </div>
         </div>
 
-        <!-- Card 3: Couple Pack -->
+        <!-- Card 3: Family Pack -->
         <div class="col-md-4 mb-4 fade-in">
           <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Couple Pack</h5>
-            <span class="badge bg-warning text-dark mb-2">2 Regular Tickets</span>
-            <h4 class="fw-bold text-white">Rp. 390.000,-</h4>
-            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
-          </div>
-        </div>
-
-        <!-- Card 4: Family Pack -->
-        <div class="col-md-4 mb-4 fade-in">
-          <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Family Pack</h5>
-            <span class="badge bg-warning text-dark mb-2">3 Regular Tickets</span>
-            <h4 class="fw-bold text-white">Rp. 570.000,-</h4>
-            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
-          </div>
-        </div>
-
-        <!-- Card 5: Family Pack -->
-        <div class="col-md-4 mb-4 fade-in">
-          <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Family Pack Plus</h5>
-            <span class="badge bg-warning text-dark mb-2">5 Regular Tickets</span>
-            <h4 class="fw-bold text-white">Rp. 950.000,-</h4>
-            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
-          </div>
-        </div>
-
-        <!-- Card 6: Special Community Pack -->
-        <div class="col-md-4 mb-4 fade-in">
-          <div class="price-badge text-center">
-            <h5 class="fw-bold mb-3">Special Community Pack</h5>
-            <span class="badge bg-warning text-dark mb-2">Get 10 Free 1</span>
-            <h4 class="fw-bold text-white">Rp. 1.890.000,-</h4>
-            <a href="https://www.yesplis.com/event/surabaya-fun-run-2025" class="btn btn-register mt-3">Register</a>
+            <h5 class="fw-bold mb-3">Family Xtra 3 Pack</h5>
+            <span class="badge bg-secondary text-white mb-2">Sold Out</span>
+            <h4 class="fw-bold text-white text-decoration-line-through">Rp. 630.000,-</h4>
+            <button class="btn btn-secondary mt-3" disabled>Sold Out</button>
           </div>
         </div>
       </div>

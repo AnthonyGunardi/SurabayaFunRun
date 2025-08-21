@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surabaya Fun Run 2025</title>
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root {
+      --color10: #FCD94B;
+      --color30: #FFFFFF;
+      --color60: #bbb2b2;
+      --primarys: #252222;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0b3d2e, #127e59);
+      color: white;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0b3d2e;
+      padding: 8px 0;
+    }
+
+    header .navbar-brand img {
+      max-height: 50px;
+      width: auto;
+    }
+
+    .header-container {
+      max-width: 100%;
+    }
+
+    .rules-section {
+      flex: 1;
+      padding: 60px 0;
+    }
+
+    .nav-pills .nav-link {
+      background: #252222;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    .nav-pills .nav-link.active {
+      background: var(--color10);
+      color: #252222;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      min-height: 300px;
+      color: #0b3d2e;
+    }
+
+    .tab-content h4 {
+      color: #127e59;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .tab-content ul li {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .tab-content p {
+      text-align: justify;
+      color: #fff;
+    }
+
+    footer {
+      background-color: #0b3d2e;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container d-flex justify-content-between align-items-center header-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/images/logo_surabaya_fun_run_white.png" alt="Surabaya Fun Run 2025">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="rules.html">Rule</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Rules Section -->
+  <section class="rules-section">
+    <div class="container">
+      <div class="row">
+        <!-- Left navigation -->
+        <div class="col-md-4 col-lg-3 mb-4">
+          <div class="nav flex-column nav-pills" id="rules-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="p1-tab" data-bs-toggle="pill" data-bs-target="#p1" type="button"
+              role="tab">Peraturan Pendaftaran</button>
+            <button class="nav-link" id="p2-tab" data-bs-toggle="pill" data-bs-target="#p2" type="button"
+              role="tab">Peraturan Fun Run</button>
+            <button class="nav-link" id="p3-tab" data-bs-toggle="pill" data-bs-target="#p3" type="button"
+              role="tab">Ketentuan Peserta</button>
+            <button class="nav-link" id="p4-tab" data-bs-toggle="pill" data-bs-target="#p4" type="button"
+              role="tab">Pengambilan Racepack</button>
+            <button class="nav-link" id="p5-tab" data-bs-toggle="pill" data-bs-target="#p5" type="button"
+              role="tab">Penitipan Barang</button>
+            <button class="nav-link" id="p6-tab" data-bs-toggle="pill" data-bs-target="#p6" type="button"
+              role="tab">Pendaftaran Peserta</button>
+          </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="col-md-8 col-lg-9">
+          <div class="tab-content" id="rules-tabContent">
+            <div class="tab-pane fade show active" id="p1" role="tabpanel">
+              <h4>Peraturan Pendaftaran</h4>
+              <ul>
+                <li>Pendaftaran hanya dapat dilakukan melalui website resmi <strong>Surabaya Fun Run 2025</strong> atau mitra resmi yang ditunjuk panitia.</li>
+                <li>Peserta wajib mengisi data pribadi dengan benar, lengkap, dan sesuai dengan identitas resmi (KTP/SIM/Paspor).</li>
+                <li>Pendaftaran bersifat <strong>non-transferable</strong> dan <strong>Non-refundable</strong> (tidak dapat dipindah tangankan maupun dikembalikan).</li>
+                <li>Biaya pendaftaran sudah termasuk racepack (jersey resmi, nomor BIB, dan souvenir lainnya).</li>
+                <li>Peserta akan menerima konfirmasi pendaftaran melalui email setelah pembayaran berhasil diverifikasi.</li>
+                <li>Pendaftaran akan ditutup apabila kuota peserta telah terpenuhi, meskipun sebelum batas waktu yang ditentukan.</li>
+                <li>Dengan melakukan pendaftaran, peserta dianggap telah membaca, memahami, dan menyetujui seluruh <em>Peraturan & Regulasi</em> yang berlaku.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="p2" role="tabpanel">
+              <h4>Peraturan Surabaya Fun Run</h4>
+              <ul>
+                <li>Pihak penyelenggara berhak untuk mengubah ketentuan dan kondisi yang berlaku tanpa disertai pemberitahuan terlebih dahulu kepada peserta Surabaya Fun Run.</li>
+                <li>Peserta menyetujui untuk memberikan informasi tentang kepesertaan yang benar, akurat, terkini dan menyeluruh, yang terdapat dalam formulir pendaftaran.</li>
+                <li>Pihak penyelenggara dapat menghubungi peserta sewaktu-waktu melalui surat elektronik. Surat pemberitahuan dikirim ke alamat surat elektronik yang terdaftar pada pihak penyelenggara dan akan disamakan dengan yang diterima oleh peserta.</li>
+                <li>Pihak penyelenggara memiliki hak untuk menutup pendaftaran sebelum tenggang waktu tanpa pemberitahuan terlebih dahulu ketika kuota Surabaya Fun Run sudah penuh.</li>
+                <li>Apabila Surabaya Fun Run terpaksa dibatalkan dikarenakan hal diluar kontrol (termasuk hujan deras, badai, atau musibah, demonstrasi, perubahan peraturan dari pihak pemerintah atau pihak terkait), maka tidak ada pengembalian biaya pendaftaran dan pihak penyelenggara tidak bertanggung jawab atas kerugian atau ketidaknyamanan yang terjadi.</li>
+                <li>Pihak penyelenggara berhak untuk menghentikan Surabaya Fun Run atau merubah rute.</li>
+                <li>Peserta Surabaya Fun Run wajib untuk mengetahui rute Surabaya Fun Run, kesalahan rute merupakan tanggung jawab peserta.</li>
+                <li>Pihak penyelenggara berhak menetapkan batas waktu Surabaya Fun Run atau <strong>Cut Off Time (COT)</strong>. Pihak penyelenggara akan memberlakukan Cut Off Time sebagai berikut:
+                  <ul>
+                    <li>Kategori 5K dengan Cut Off Time <strong>2 jam</strong> (Start jam 06:00, COT jam 08:00)</li>
+                  </ul>
+                </li>
+                <li>Peserta diharapkan mengisi target finish dengan jujur saat pengisian form pendaftaran dan memasuki row wave sesuai yang dipilih saat start demi kelancaran Surabaya Fun Run.</li>
+                <li>Peserta dianggap memahami dan menyetujui adanya resiko yang dapat muncul dari keikutsertaan dalam Surabaya Fun Run dan tidak berhak menuntut atas segala kejadian yang dapat menyebabkan cedera tubuh, cacat bahkan kematian kepada pihak penyelenggara.</li>
+                <li>Peserta menjamin berada pada kesiapan fisik atau kesehatan yang baik untuk mengikuti Surabaya Fun Run dan setuju untuk bertanggung jawab atas tindakan peserta pada saat Surabaya Fun Run.</li>
+                <li>Peserta wajib mengetahui dan memahami peraturan Surabaya Fun Run. Jika tidak mematuhi peraturan yang telah ditentukan maka dapat mengakibatkan peserta untuk kehilangan hak yang seharusnya didapatkan oleh peserta pada perlombaan.</li>
+                <li>Pihak penyelenggara memiliki hak atas penggunaan dokumentasi baik berbentuk foto ataupun video dari Surabaya Fun Run ini.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="p3" role="tabpanel">
+              <h4>Ketentuan Peserta</h4>
+              <ul>
+                <li>Peserta datang <strong>1 jam sebelum waktu start</strong>.</li>
+                <li>Peserta dianjurkan mengenakan baju yang telah disediakan oleh pihak penyelenggara.</li>
+                <li>Peserta wajib menggunakan nomor BIB milik sendiri yang terpasang di depan dada dan dapat terlihat dengan jelas oleh pihak penyelenggara.</li>
+                <li>Peserta <strong>DILARANG KERAS</strong> memakai pakaian yang mengandung unsur SARA dan politik.</li>
+                <li>Peserta <strong>DILARANG KERAS</strong> membawa minuman keras, senjata tajam, atau barang lain yang dapat membahayakan peserta lain.</li>
+                <li>Peserta <strong>DILARANG KERAS</strong> merokok di area Surabaya Fun Run.</li>
+                <li>Pihak penyelenggara berhak menyita barang-barang terlarang di atas apabila ditemukan pada saat <em>body checking</em>.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="p4" role="tabpanel">
+              <h4>Pengambilan Racepack</h4>
+              <ul>
+                <li>Racepack meliputi baju, nomor BIB, dan material promosi lainnya.</li>
+                <li>Nomor BIB merupakan nomor yang telah ditentukan oleh pihak penyelenggara.</li>
+                <li>Peserta Surabaya Fun Run yang tidak memiliki atau tidak menggunakan nomor BIB saat Surabaya Fun Run <strong>DILARANG MASUK</strong> ke dalam venue.</li>
+                <li>Racepack hanya dapat diambil pada tempat dan waktu yang telah ditentukan oleh pihak penyelenggara, sebagai berikut:
+                  <ul>
+                    <li><strong>Hari &amp; Tanggal</strong>: Jum'at, 4 Oktober 2025</li>
+                    <li><strong>Pukul</strong>: 09.00 s/d 22.00 WIB</li>
+                    <li><strong>Tempat</strong>: Livind Land by Mandiri, Surabaya</li>
+                  </ul>
+                </li>
+                <li>Detail jadwal dan alur pelaksanaan pengambilan racepack akan diberitahukan kepada peserta melalui surat elektronik dan/atau media sosial resmi penyelenggara.</li>
+                <li>Nomor BIB diharapkan tidak hilang ataupun rusak.</li>
+                <li>Nomor BIB peserta <strong>tidak dapat dipindahtangankan</strong> atau diperjualbelikan kepada pihak lain. Pelanggaran akan berakibat diskualifikasi dari Surabaya Fun Run.</li>
+                <li>Peserta wajib membawa dokumen e-mail konfirmasi kepesertaan dan identitas resmi (KTP/SIM/PASSPORT) untuk pengambilan racepack.</li>
+                <li>Pengambilan racepack dapat diwakilkan, tetapi wajib menyertakan surat kuasa yang disediakan oleh panitia dan harus ditandatangani oleh pemberi kuasa.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="p5" role="tabpanel">
+              <h4>Penitipan Barang</h4>
+              <ul>
+                <li>Pihak penyelenggara menyediakan fasilitas penitipan barang peserta.</li>
+                <li>Waktu penitipan dan pengambilan barang peserta dibuka pada pukul <strong>04.00</strong> dan ditutup pukul <strong>09.30 WIB</strong>.</li>
+                <li>Pihak penyelenggara <strong>tidak menerima penitipan</strong> atas barang berharga milik peserta.</li>
+                <li>Kehilangan barang milik peserta menjadi tanggung jawab peserta sepenuhnya.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="p6" role="tabpanel">
+              <h4>Pendaftaran Peserta</h4>
+              <ul>
+                <li>Pendaftaran boleh dilakukan oleh <strong>warga negara Indonesia</strong> dan <strong>warga negara asing</strong>.</li>
+                <li>Peserta wajib memiliki identitas / tanda pengenal resmi seperti <strong>KTP/SIM/PASSPORT</strong>.</li>
+                <li>Usia peserta dibatasi minimal <strong>14 tahun</strong> pada hari Surabaya Fun Run (sesuai data pada akun resmi).</li>
+                <li>Peserta wajib mengisi formulir pendaftaran melalui website resmi secara lengkap dan benar, serta membayar biaya pendaftaran sesuai informasi yang ditetapkan.</li>
+                <li>Peserta wajib memilih kategori Surabaya Fun Run sesuai dengan ketentuan yang telah ditetapkan.</li>
+                <li>Peserta menyetujui untuk memberikan informasi tentang kepesertaan yang benar, akurat, terkini, dan menyeluruh dalam formulir pendaftaran.</li>
+                <li>Peserta wajib memastikan bahwa segala informasi yang diberikan adalah benar dan akurat.</li>
+                <li>Peserta <strong>tidak dapat mengubah informasi</strong> setelah konfirmasi pendaftaran dikirim.</li>
+                <li>Penyelesaian formulir pendaftaran online menegaskan persetujuan peserta untuk mematuhi seluruh aturan dan regulasi Surabaya Fun Run.</li>
+                <li>Pendaftaran sebaiknya dilakukan oleh peserta sendiri. Kepesertaan <strong>tidak dapat dialihnamakan</strong>, bersifat final, dan peserta menerima sepenuhnya seluruh peraturan serta ketentuan yang berlaku.</li>
+                <li>Konfirmasi pendaftaran Surabaya Fun Run akan diberikan setelah peserta melengkapi pendaftaran dan pembayaran.</li>
+                <li><strong>Pembatalan pendaftaran tidak dapat dilakukan</strong>, termasuk pengembalian biaya pendaftaran.</li>
+              </ul>
+            </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-4">
+    <p class="mb-0">&copy; <span id="currentYear"></span> Haivo. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
